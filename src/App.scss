@@ -1,0 +1,139 @@
+/* my color palette variables */
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+      format("woff2");
+}
+
+:root {
+  --text-color: #222f3e;
+  --main-bg: #dfe4ea;
+  --customYellow: rgb(255, 152, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Product Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-weight: normal;
+  font-style: normal;
+  color: var(--text-color);
+  min-height: 100vh;
+  background-color: var(--main-bg);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+
+section {
+  font-size: 1rem;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:visited {
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.filter-panel {
+  max-width: 25%;
+  flex-grow: 1;
+}
+
+.characters-panel {
+  max-width: 75%;
+  flex-grow: 3;
+}
+
+.main-content,
+.page-section {
+  padding-top: 1.5em;
+}
+
+.main-content {
+  padding-top: 30px;
+}
+
+.aside {
+  padding-right: 30px;
+  width: 100%;
+  .search-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .form-control {
+    margin-bottom: 15px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  ul {
+    display: inline-flex;
+  }
+}
